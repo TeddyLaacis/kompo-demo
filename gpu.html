@@ -2493,7 +2493,7 @@ body.light-mode::before {
     // Load GPU data from CSV
     async function loadGPUsFromCSV() {
         try {
-            const response = await fetch("gpu_data_combined.csv");
+            const response = await fetch("https://raw.githubusercontent.com/teddylaacis/kompo-demo/main/gpu_data_combined.csv");
             if (!response.ok) {
                 throw new Error(`Failed to fetch CSV: ${response.status} ${response.statusText}`);
             }
