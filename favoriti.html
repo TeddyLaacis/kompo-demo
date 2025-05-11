@@ -1202,7 +1202,7 @@ function displayFavorites() {
                     <div class="pc-top1"></div>
                 </div>
                 <p class="empty-message" data-key="noFavorites">${translations[lang].noFavorites}</p>
-                <a href="prieksa.html" class="goto-button" data-key="selectComponents">${translations[lang].selectComponents}</a>
+                <a href="index.html" class="goto-button" data-key="selectComponents">${translations[lang].selectComponents}</a>
             </div>
         `;
         startGlitchParticles();
@@ -1519,7 +1519,7 @@ function addToPrieksa(type, name, price, ...args) {
             return;
         }
         console.log(`Added ${type} to prieksa: ${name}, price: ${price}`);
-        window.location.href = "./prieksa.html";
+        window.location.href = "./index.html";
     } catch (error) {
         console.error(`Error in addToPrieksa for ${type}:`, error);
     }
